@@ -1,0 +1,8 @@
+
+input_dir=/mnt/disk0/challanging_datasets/stairs/global_frame/
+output_dir=${input_dir}pcd/
+cloud_prefix=PointCloud
+mkdir -p $output_dir
+rosrun cloud_conversion_utils CvsToPcd --input-dir $input_dir --cloud-prefix $cloud_prefix --output-dir $output_dir
+
+
